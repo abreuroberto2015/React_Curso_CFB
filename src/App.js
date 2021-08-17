@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from './componentes/img/logo.png'
+
 
 export default function App(){
   const canal =() => {
@@ -11,8 +13,16 @@ export default function App(){
 
   return(
     <>
-        <p>{'canal: ' + canal()}</p>       
+    <header>
+        <p>{'canal : ' + canal()}</p>       
         <p>{curso()}</p>
+    </header>    
+
+    <section>
+        <img src={logo}/>     
+        <img src='/img/eu.jpg'  /> 
+    </section>  
+      
     </>
   )
 }
